@@ -9,3 +9,8 @@ input.addEventListener("keyup", function () {
 output.addEventListener("keyup", function () {
   input.value = output.value;
 });
+
+fontfamily.addEventListener("click", function () {
+  let value = this.value;
+  document.querySelector(".output").style.fontFamily = `${value},sans-serif`;
+});
